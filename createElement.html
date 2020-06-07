@@ -6,7 +6,18 @@
   <body>
     <button type="button" name="button" onclick="myFunc()">Crea Script El</button>
     <button type="button" name="button" onclick="mySec()">Crea Sec El</button>
-      <button type="button" name="button" onclick="changeTitle()">Change title</button>
+    <button type="button" name="button" onclick="changeTitle()">Change title</button>
+      <button type="button" name="button" onclick="sayHi()">Say hello</button>
+
+      <script>
+      <!--
+      function sayHi()
+      {
+        console.log("Hi!");
+      alert('Hi');
+      }//-->
+      </script>
+
         <script type="text/javascript" >
           function myFunc(){
         //  alert('X');
@@ -23,7 +34,6 @@
 function changeTitle(){
   var x = document.title = "Nuovo Titolo";
 }
-
           function mySec(){
 
             var x = document.createElement("SECTION");
