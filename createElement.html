@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>
+    </title>
+</head>
+  <body>
+    <button type="button" name="button" onclick="myFunc()">Crea Script El</button>
+    <button type="button" name="button" onclick="mySec()">Crea Sec El</button>
+      <button type="button" name="button" onclick="changeTitle()">Change title</button>
+        <script type="text/javascript" >
+          function myFunc(){
+        //  alert('X');
+/*            var x = document.createElement('script');
+              x.src = 'paolo.js';
+              document.body.appendChild(x);*/
+
+
+              var x = document.createElement("SCRIPT");
+ var t = document.createTextNode("alert('Hello World!')");
+ x.appendChild(t);
+ document.body.appendChild(x);
+          }
+function changeTitle(){
+  var x = document.title = "Nuovo Titolo";
+}
+
+          function mySec(){
+
+            var x = document.createElement("SECTION");
+            x.setAttribute("id", "mySection");
+            document.body.appendChild(x);
+
+            var heading = document.createElement("H1");
+            var txt1 = document.createTextNode("Section Heading");
+            heading.appendChild(txt1);
+            document.getElementById("mySection").appendChild(heading);
+
+            var para = document.createElement("P");
+            var txt2 = document.createTextNode("Some text in section..");
+            para.appendChild(txt2);
+            document.getElementById("mySection").appendChild(para);
+
+          }
+        </script>
+
+  </body>
+</html>
