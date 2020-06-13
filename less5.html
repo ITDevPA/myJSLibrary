@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>
+    </title>
+</head>
+  <body>
+    <button type="button" name="button" onclick="getInnerDiv()">get div value Script</button>
+    <button type="button" name="btnprev" onclick="goPrev()">previous</button>
+    <button type="button" name="btnFwd" onclick="goFwd()">forward</button>
+    <button type="button" name="btnGo" onclick="goTo()">Go to</button>
+
+    <button type="button" name="buttonset" onclick="setInnerDiv()">set div value Script</button>
+    <button type="button" name="btnGo2Href" onclick="setLocation()">setnew location</button>
+
+
+    <div id="div1">
+        <p>this is inside par</p>
+      </div>
+      <script>
+          function getInnerDiv(){
+
+            alert(document.getElementById("div1").innerHTML);
+          }
+
+          function getNumbers(){
+            return prompt("Please enter num", 0);
+
+          }
+
+          function setLocation()
+          {
+            location.href = prompt("Please enter location", "http://www.google.com");
+
+          }
+          function replaceLocation()
+          {
+            location.replace( prompt("Please enter location", "http://www.google.com")); 
+
+          }
+
+          function goTo(){
+            var numPage = getNumbers();
+            if (numPage == 0 ) {alert('abort') ; return; }
+
+            if(numPage)
+            history.go(numPage);
+
+          }
+          function goPrev(){
+            history.back();
+
+          }
+          function goFwd(){
+            history.forward();
+          }
+
+          function setInnerDiv(){
+
+            document.getElementById("div1").innerHTML="<p style='background=red'>nuovo valore del par</p>" ;
+            alert("You've visited " + history.length + " web pages in this browser session");
+          }
+
+      </script>
+  </body>
+</html>
