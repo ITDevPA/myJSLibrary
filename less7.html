@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ita">
+<head>
+    <title> ::: JS in 24 hours -7 :::    </title>
+    <script src="./myJSLibrary.js"></script>
+    <script src="./JSstrLibrary.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+<style>
+p {font: 14px normal arial, verdana, helvetica;}
+</style>
+</head>
+  <body>
+
+    <div id="container">
+      <header>
+          <button type="button" name="button" onclick="var num=2; alert(num.toExponential(2));">To String</button>
+      <header>
+      <div id="newSection">
+      </div>
+      <div id="navInfo">
+        <button type="button" name="button" onclick="alert('row1\nrow2\nrow3');">multiple rows</button>
+        <button type="button" name="button" onclick="repeatString('row1',3);">repeat string</button>
+        <button type="button" name="button" onclick="document.getElementById('divrepeat').innerHTML =  changeCaseToStr('nuova stringa',1);">to upper/lower</button>
+      </div>
+      <div id="fake">
+        <button type="button" name="btnFake" onclick="detectSpam('a new update from fake');">FAKE</button>
+      </div>
+
+      <div id='divrepeat'>
+      </div>
+    </div> <!--container-->
+
+  </body>
+</html>

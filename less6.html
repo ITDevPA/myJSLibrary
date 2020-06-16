@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ita">
+<head>
+    <title> ::: JS in 24 hours :::    </title>
+    <script src="./myJSLibrary.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+<style>
+p {font: 14px normal arial, verdana, helvetica;}
+</style>
+</head>
+  <body>
+
+    <div id="container">
+      <header>
+          <button type="button" name="button" onclick="var num=2; alert(num.toExponential(2));">To String</button>
+      <header>
+      <div id="newSection">
+        <button type="button" name="btnBinary" onclick="getBinaryNumeration(32);" >binary</button>
+        <button type="button" name="btnBinary" onclick="var now = new Date('1970-01-02');alert(Number(now));alert(new Date(Number(now)));" >date 2 num </button>
+      </div>
+      <div id="navInfo">
+
+        <button type="button" name="btnFixed" onclick="alert(addDecimalPosToNumber(100,4));">Add dec pos</button>
+        <button type="button" name="btnFixed" onclick="var flag = new Boolean(-786);alert(flag);">tet    dec pos</button>
+      </div>
+      <div id="binlist">
+      </div>
+    </div> <!--container-->
+
+  </body>
+</html>
